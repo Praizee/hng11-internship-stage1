@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Tech Goals | Stephen Adeniji</title>
     <link rel="stylesheet" href="styles.css" />
-        <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -21,26 +21,58 @@
     <main>
       <section>
         <h2>About Me</h2>
-        <p data-testid="slackDisplayName">Stephen Adeniji</p>
-        <img
-          src="assets/music-producer-working-in-studio.png"
-          alt="Slack Profile Picture"
-          data-testid="slackProfilePicture"
-          
-        />
-        <p data-testid="slackEmail">adeolaastephen@gmail.com</p>
+        <span class="image-box">
+          <img
+            src="assets/music-producer-working-in-studio-150x150.png"
+            alt="Slack Profile Picture"
+            data-testid="slackProfilePicture"
+          />
+        </span>
+
+        <span class="details">
+          <p class="title">Name:</p>
+          <p data-testid="slackDisplayName">Stephen Adeniji</p>
+        </span>
+
+        <span class="details">
+          <p class="title">Email:</p>
+          <p data-testid="slackEmail">adeolaastephen@gmail.com</p>
+        </span>
+
+        <p>
+          I am a frontend developer with a passion for creating seamless user
+          experiences. Currently, I am expanding my skills into mobile
+          development using React Native and Expo. I am also a Cybersecurity
+          enthusiast and enjoy exploring new technologies and contributing to
+          open source projects.
+        </p>
       </section>
       <section>
         <h2>Goals</h2>
         <ul>
-          <li>Master React and Next.js</li>
-          <li>Build and publish a mobile app using React Native and Expo</li>
-          <li>Deepen knowledge in cybersecurity</li>
+          <li>Master React, Next.js and Typescript</li>
+          <li>
+            Learn React Native and Expo, then build and publish mobile apps
+          </li>
           <li>Contribute to open source projects</li>
-          <li>Learn backend development (Node.js)</li>
+          <li>Deepen knowledge in Cybersecurity</li>
         </ul>
       </section>
+
       <section>
+        <h2>Current Info</h2>
+        <p data-testid="currentTimeUTC">
+          Current Time in UTC: <span id="currentTimeUTC"></span>
+        </p>
+        <p data-testid="currentTimeLocal">
+          Current Local Time: <span id="currentTimeLocal"></span>
+        </p>
+        <p data-testid="currentDay">
+          Current Day: <span id="currentDay"></span>
+        </p>
+      </section>
+
+      <!-- <section>
         <h2>Current Info</h2>
         <p data-testid="currentTimeUTC">
           Current Time in UTC: <span id="currentTime"></span>
@@ -48,7 +80,7 @@
         <p data-testid="currentDay">
           Current Day: <span id="currentDay"></span>
         </p>
-      </section>
+      </section> -->
       <section>
         <h2>Useful Links</h2>
         <ul>
